@@ -11,7 +11,7 @@ module.exports = function (grunt) {
     var html5Lint = require( 'html5-lint' );
     var done = this.async();
 
-    grunt.util.async.forEach(this.filesSrc, function(filepath, cb) {
+    grunt.util.async.forEach(this.filesSrc, function(filepath, callback) {
       var html = grunt.file.read(filepath);
 
       html5Lint(html, function(err, results) {
@@ -19,14 +19,12 @@ module.exports = function (grunt) {
           grunt.log.error('HTML5 Lint [%s:%s] [%s]: %s', filepath, msg.lastLine, msg.type, msg.message);
         });
 
-        if(results.messages.length === 0) {
-          grunt.log.ok('No HTML5 errors in file=[%s]', filepath);
-        }
-
-        cb(results.messages.length > 0);
+        callback(results.messages.length > 0);
       });
     }, function(error) {
-      done(!error);
+      if(!error) {
+        done(!error);
+      }
     });
 
   });

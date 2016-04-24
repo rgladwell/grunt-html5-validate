@@ -1,6 +1,6 @@
 {
   "name": "grunt-html5-validate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Grunt plugin for Mozilla's HTML5 linter to validate your HTML.",
   "repository": "git@github.com:rgladwell/grunt-html5-validate.git",
   "homepage": "https://github.com/rgladwell/grunt-html5-validate",
