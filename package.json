@@ -1,0 +1,35 @@
+{
+  "name": "grunt-html5-validate",
+  "version": "0.1.0",
+  "description": "Grunt plugin for Mozilla's HTML5 linter to validate your HTML.",
+  "repository": "git@github.com:rgladwell/grunt-html5-validate.git",
+  "homepage": "https://github.com/rgladwell/grunt-html5-validate",
+  "author": {
+    "name": "Ricardo Gladwell",
+    "email": "ricardo@gladwell.me",
+    "url": "https://gladwell.me"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "main": "Gruntfile.js",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-nodeunit": "~0.3.0",
+    "grunt": "~0.4.2",
+    "jshint-stylish": "~0.1.5",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "dependencies": {
+    "html5-lint": "^0.2.5"
+  },
+  "keywords": [
+    "gruntplugin",
+    "html5",
+    "lint"
+  ]
+}
