@@ -1,4 +1,4 @@
-# grunt-html5-validate
+# grunt-html5-validate [![Dependency Status](https://dependencyci.com/github/rgladwell/grunt-html5-validate/badge)](https://dependencyci.com/github/rgladwell/grunt-html5-validate)
 
 A simpler, kinder Grunt plugin for Mozilla's HTML5 Linter.
 
